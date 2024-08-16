@@ -6,5 +6,5 @@ metadata:
 spec:
   containers:
   - name: nginx
-    image: nginx
-    #image: harbor.myweb.io/erp/nginx:0.1
+    #image: nginx
+    image: harbor.myweb.io/erp/nginx:0.1
