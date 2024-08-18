@@ -4,8 +4,7 @@ pipeline {
     stage('Test') {
       steps {
         sh '''
-          git --version
-          curl --version
+          docker images | grep ubuntu_with_python
         '''
       }
     }
