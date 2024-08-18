@@ -3,7 +3,7 @@ node {
          checkout scm
      }
      stage('Build image') {
-         app = docker.build("teichae/jenkins")
+         app = docker.build("erp/jenkins")
      }
      stage('Push image') {
          docker.withRegistry('https://harbor.myweb.io', 'harbor') {
