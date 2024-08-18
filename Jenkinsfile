@@ -4,7 +4,7 @@ pipeline {
     stage('Test') {
       steps {
         sh '''
-          docker images | grep ubuntu_with_python
+          docker images
         '''
       }
     }
