@@ -6,7 +6,11 @@ metadata:
   labels:
     app: busybox
 spec:
+<<<<<<< HEAD
   replicas: 2
+=======
+  replicas: 5
+>>>>>>> 495b2ab0fb37ffc31c41de3e6eec6c8bc7b252c3
   selector:
     matchLabels:
       app: busybox  # POD label과 일치
