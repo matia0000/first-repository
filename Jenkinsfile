@@ -1,6 +1,4 @@
-<<<<<<< HEAD
 node {
-=======
 pipeline {
   agent { dockerfile true }
   stages {
@@ -13,12 +11,10 @@ pipeline {
     }
   }
   node {
->>>>>>> 495b2ab0fb37ffc31c41de3e6eec6c8bc7b252c3
      stage('Clone repository') {
          checkout scm
      }
      stage('Build image') {
-<<<<<<< HEAD
          app = docker.build("erp/nginx")
      }
      stage('Push image') {
@@ -27,9 +23,7 @@ pipeline {
              app.push("latest")
          }
      }
-=======
          app = docker.build("teichae/jenkins:$BUILD_NUMBER")
      }
   }
->>>>>>> 495b2ab0fb37ffc31c41de3e6eec6c8bc7b252c3
 }
