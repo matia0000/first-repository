@@ -1,4 +1,3 @@
-node {
 pipeline {
   agent { dockerfile true }
   stages {
